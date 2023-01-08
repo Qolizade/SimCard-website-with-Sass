@@ -8,10 +8,14 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem;
-  color: #777; }
+  box-sizing: border-box; }
 
+@impo // components
+
+// layout
+
+// pages
+@import "./pages/home";
 .header {
   display: flex;
   justify-content: center;
@@ -40,23 +44,3 @@ body {
       height: 400px;
       left: 50%;
       transform: translate(-50%, 0); }
-
-@keyframes fadeInleft {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-2rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(2rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
