@@ -1,3 +1,23 @@
+@keyframes fadeInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 *,
 ::before,
 ::after {
@@ -10,37 +30,52 @@ html {
 body {
   box-sizing: border-box; }
 
-@impo // components
+.heading__primary {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #1c2b97, #9fa8da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  transition: all 100ms ease-in-out; }
+  .heading__primary:hover {
+    transform: rotate(1deg) skew(15deg);
+    text-shadow: 5px 6px 4px rgba(0, 0, 0, 0.5); }
 
-// layout
+.header__title {
+  text-transform: uppercase;
+  text-align: center; }
+  .header__title--main {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    animation: fadeInleft 1s ease-out; }
+  .header__title--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    animation: fadeInRight 1s ease-out; }
 
-// pages
-@import "./pages/home";
+.header__images {
+  position: relative; }
+  .header__images--darkblob {
+    height: 400px;
+    opacity: 0.7; }
+  .header__images--blueblob, .header__images--simcard {
+    position: absolute;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%, 0); }
+
+body {
+  padding: 3rem;
+  color: #777; }
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10rem 0; }
-  .header__title {
-    text-transform: uppercase;
-    text-align: center; }
-    .header__title--main {
-      display: block;
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      animation: fadeInleft 1s ease-out; }
-    .header__title--sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 400;
-      animation: fadeInRight 1s ease-out; }
-  .header__images {
-    position: relative; }
-    .header__images--darkblob {
-      height: 400px;
-      opacity: 0.7; }
-    .header__images--blueblob, .header__images--simcard {
-      position: absolute;
-      height: 400px;
-      left: 50%;
-      transform: translate(-50%, 0); }
