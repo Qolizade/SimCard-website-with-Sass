@@ -1,1 +1,62 @@
-/* styles */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  color: #777; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0; }
+  .header__title {
+    text-transform: uppercase;
+    text-align: center; }
+    .header__title--main {
+      display: block;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      animation: fadeInleft 1s ease-out; }
+    .header__title--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      animation: fadeInRight 1s ease-out; }
+  .header__images {
+    position: relative; }
+    .header__images--darkblob {
+      height: 400px;
+      opacity: 0.7; }
+    .header__images--blueblob, .header__images--simcard {
+      position: absolute;
+      height: 400px;
+      left: 50%;
+      transform: translate(-50%, 0); }
+
+@keyframes fadeInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
