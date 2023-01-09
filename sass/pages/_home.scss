@@ -7,9 +7,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
 }
-.section-about {
-  padding: 10rem 0;
-  text-align: center;
+
+.section-specifications-cards {
+  background-image: url("../../img/simcard.jpg");
+  clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 100%, 0 33%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
 }
