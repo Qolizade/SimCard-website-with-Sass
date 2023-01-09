@@ -60,11 +60,36 @@ body {
   padding-bottom: 10rem; }
 
 .u-vertical-padding-sm {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .u-center-text {
   text-align: center; }
+
+.specification-card {
+  font-size: 1.7rem;
+  padding: 2.5rem;
+  border-radius: 0.3;
+  box-shadow: 0 4.5px 2px 2px rgba(0, 0, 0, 0.15);
+  clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 0% 15%); }
+  .specification-card:hover {
+    transition: transform 200ms ease-in;
+    transform: scale(1.05); }
+  .specification-card__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .specification-card__icon i {
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #1c2b97, #9fa8da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; }
+  .specification-card__list {
+    list-style: none;
+    line-height: 2;
+    font-weight: 600; }
 
 .row {
   max-width: 114rem;
@@ -158,10 +183,9 @@ body {
   align-items: center; }
 
 .section-specifications-cards {
-  background-image: url("../../img/simcard.jpg");
-  clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 100%, 0 33%);
+  background-image: linear-gradient(to bottom, rgba(28, 43, 151, 0.5), rgba(28, 43, 151, 0.5)), url("../../img/simcard.jpg");
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 25%, 20% 0%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
   width: 100%; }
