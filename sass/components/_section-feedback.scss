@@ -1,0 +1,17 @@
+.feedback-card {
+  background-color: $white-color;
+  border-radius: 0.7rem;
+  box-shadow: .1rem .4rem 1.2rem rgba($black-color, .6);
+  padding: 2rem;
+
+  &__header {
+    &--image {
+    }
+
+    &--title {
+    }
+  }
+
+  &__paragraph {
+  }
+}
