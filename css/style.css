@@ -277,3 +277,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%; }
+
+.section-form__bkg-video {
+  height: 100%;
+  width: 100%; }
