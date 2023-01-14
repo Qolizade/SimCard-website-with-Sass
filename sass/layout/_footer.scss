@@ -1,0 +1,44 @@
+.footer {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 10rem 0rem;
+  text-align: center;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+
+    li a {
+      color: $white-color;
+      padding: 2rem;
+    }
+  }
+
+  &__policy {
+    border-right: 1px solid $white-color;
+    text-align: left;
+
+    &--title {
+      padding-bottom: 2rem;
+    }
+
+    &--paragraph {
+      line-height: 3.3rem;
+    }
+  }
+  &__address {
+    text-align: center;
+
+    &--title {
+      text-transform: capitalize;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: -5rem;
+  }
+}
