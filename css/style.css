@@ -66,6 +66,14 @@ body {
 .u-center-text {
   text-align: center; }
 
+.form__input--text {
+  padding: 1rem 1rem 2rem 1rem;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem; }
+  .form__input--text:focus {
+    outline: 0; }
+
 .plan-card {
   perspective: 150rem;
   -moz-perspective: 150rem;
