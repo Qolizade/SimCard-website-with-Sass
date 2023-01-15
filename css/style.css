@@ -506,7 +506,7 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%;
+  width: 20%;
   line-height: 5rem; }
 
 .navigation__link:link, .navigation__link:visited {
