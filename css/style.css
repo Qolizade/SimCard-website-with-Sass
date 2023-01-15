@@ -95,10 +95,10 @@ body {
 .u-ml-lg {
   margin-left: 15rem; }
 
-.u-ml-lg {
+.u-ml-md {
   margin-left: 10rem; }
 
-.u-ml-lg {
+.u-ml-sm {
   margin-left: 3rem; }
 
 .btn-flip {
@@ -106,8 +106,7 @@ body {
   height: 48px;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  perspective: 150rem;
-  margin-left: 3rem; }
+  perspective: 150rem; }
   .btn-flip__link {
     font-weight: 400;
     text-transform: uppercase;
@@ -404,6 +403,12 @@ body {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
+
+.header__logo {
+  height: 7.5rem;
+  position: absolute;
+  top: 1.2rem;
+  left: 3rem; }
 
 .header__title {
   text-transform: uppercase;

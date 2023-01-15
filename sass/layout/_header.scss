@@ -1,5 +1,10 @@
-
 .header {
+  &__logo {
+    height: 7.5rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 3rem;
+  }
   &__title {
     text-transform: uppercase;
     text-align: center;
