@@ -5,6 +5,7 @@
   position: relative;
 
   &__view {
+    overflow: hidden;
     font-size: 2rem;
     height: 50rem;
     width: 100%;
@@ -21,6 +22,8 @@
     }
     &--back {
       transform: rotateY(180deg);
+      overflow: hidden;
+
       &-1 {
         background-image: linear-gradient(
           to top left,
@@ -110,9 +113,14 @@
 
   // Back Style
   &__content {
+    font-size: 1.4rem;
     color: $white-color;
-    padding: 5rem;
+    padding: 2rem;
     line-height: 3.3rem;
     font-weight: 500;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

@@ -93,6 +93,65 @@ body {
 .u-ml-lg {
   margin-left: 3rem; }
 
+.btn-flip {
+  width: 160px;
+  height: 48px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  perspective: 150rem;
+  margin-left: 3rem; }
+  .btn-flip__link {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform 0.3s;
+    cursor: pointer; }
+    .btn-flip__link:hover {
+      transform: translateZ(-24px) rotateX(-90deg); }
+  .btn-flip__front, .btn-flip__back {
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.4rem; }
+  .btn-flip__front {
+    background-color: #e65100;
+    color: #fff;
+    transform: rotateY(0) translateZ(24px); }
+  .btn-flip__back {
+    background-color: rgba(230, 81, 0, 0);
+    color: rgba(61, 61, 61, 0);
+    transform: rotateX(90deg) translateZ(24px);
+    overflow: hidden; }
+    .btn-flip__back::after {
+      content: "";
+      position: absolute;
+      top: -32%;
+      left: -10%;
+      width: 120%;
+      height: 50%;
+      background-color: #e65100;
+      transform: rotate(8deg);
+      transition: all 0.5s ease;
+      transition-delay: 0.15s; }
+  .btn-flip__link:hover .btn-flip__front {
+    background-color: #000;
+    transition: all 0.8s ease; }
+  .btn-flip__link:hover .btn-flip__back {
+    color: #fff;
+    transition: all 0.4s linear;
+    background-color: #1c2b97; }
+  .btn-flip__link:hover .btn-flip__back::after {
+    transform: rotate(6deg) translate(100px, -18px); }
+
 .form {
   width: 50%; }
   .form .form__input--text:focus ~ label, .form .form__input--text:valid ~ label {
@@ -136,6 +195,7 @@ body {
   height: 50rem;
   position: relative; }
   .plan-card__view {
+    overflow: hidden;
     font-size: 2rem;
     height: 50rem;
     width: 100%;
@@ -149,7 +209,8 @@ body {
     .plan-card__view--front {
       background-color: #fff; }
     .plan-card__view--back {
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      overflow: hidden; }
       .plan-card__view--back-1 {
         background-image: linear-gradient(to top left, #6a1b9a, #ab47bc); }
       .plan-card__view--back-2 {
@@ -189,10 +250,15 @@ body {
     line-height: 3.3rem;
     font-weight: 600; }
   .plan-card__content {
+    font-size: 1.4rem;
     color: #fff;
-    padding: 5rem;
+    padding: 2rem;
     line-height: 3.3rem;
-    font-weight: 500; }
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 .about {
   display: flex;
