@@ -25,3 +25,14 @@
     transform: translateX(0);
   }
 }
+
+@keyframes shine {
+  from {
+    mask-repeat: 150%;
+    -webkit-mask-position: 150%;
+  }
+  to {
+    mask-repeat: -50%;
+    -webkit-mask-position: -50%;
+  }
+}
