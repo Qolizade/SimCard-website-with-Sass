@@ -34,6 +34,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.55em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -434,6 +446,10 @@ body {
     height: 400px;
     left: 50%;
     transform: translate(-50%, 0); }
+  @media (max-width: 37.55em) {
+    .header__images--darkblob, .header__images--blueblob, .header__images--simcard {
+      height: 220px;
+      top: 0%; } }
 
 .navigation__checkbox {
   display: none; }
@@ -554,6 +570,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 37.55em) {
+    .header {
+      display: block; } }
 
 .section-specifications-cards {
   background-image: linear-gradient(to bottom, rgba(28, 43, 151, 0.5), rgba(28, 43, 151, 0.5)), url("../../img/simcard.jpg");
