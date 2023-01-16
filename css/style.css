@@ -354,6 +354,16 @@ body {
         background-color: rgba(0, 0, 0, 0.75);
         transform: rotate(0) skew(0);
         min-width: 100%; }
+    @media only screen and (max-width: 56.25rem), only screen and (hover: none) {
+      .about__card {
+        margin: 0rem 2rem; }
+        .about__card .about__card--img {
+          filter: grayscale(0); }
+        .about__card .about__card--title {
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.75);
+          transform: rotate(0) skew(0);
+          min-width: 100%; } }
   @media only screen and (max-width: 37.55em) {
     .about {
       margin: 5rem; }
