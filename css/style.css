@@ -454,6 +454,18 @@ body {
       padding-bottom: 3rem; }
   .footer__copyright {
     margin-bottom: -5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 5rem 1rem; }
+      .footer__nav {
+        font-size: 3rem; }
+      .footer__policy {
+        border-right: none;
+        border-bottom: 1px solid #fff; }
+        .footer__policy--paragraph {
+          padding-bottom: 2rem; }
+      .footer__copyright {
+        margin-bottom: -2rem; } }
 
 .row {
   max-width: 114rem;
@@ -641,6 +653,10 @@ body {
 .navigation__checkbox:checked + .navigation__btn .navigation__icon::before {
   top: 0;
   transform: rotate(-135deg); }
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__list {
+    width: 100%; } }
 
 body {
   color: #777; }

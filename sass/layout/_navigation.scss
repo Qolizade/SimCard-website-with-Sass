@@ -149,4 +149,9 @@
     top: 0;
     transform: rotate(-135deg);
   }
+  @include respond-to(tablet){
+    &__list{
+      width: 100%;
+    }
+  }
 }
