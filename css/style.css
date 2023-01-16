@@ -214,6 +214,9 @@ body {
       top: 0;
       left: 0;
       transition: all 200ms ease-in-out; }
+  @media only screen and (max-width: 56.25em) {
+    .form {
+      width: 100%; } }
 
 .plan-card {
   perspective: 150rem;
@@ -670,6 +673,9 @@ body {
   .section-form__bkg-video {
     height: 100%;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .section-form__bkg-video {
+        display: none; } }
 
 .form {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/network-connection.jpg");
@@ -682,6 +688,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 56.25em) {
+    .form {
+      height: auto;
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      overflow: hidden; } }
 
 .footer {
   background-color: #3d3d3d;
