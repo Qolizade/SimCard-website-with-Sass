@@ -318,6 +318,24 @@ body {
         background-color: rgba(0, 0, 0, 0.75);
         transform: rotate(0) skew(0);
         min-width: 100%; }
+  @media (max-width: 37.55em) {
+    .about {
+      margin: 5rem 2rem; }
+      .about__card {
+        height: 30rem;
+        transform: skew(10deg); }
+        .about__card--title {
+          font-size: 1.8rem;
+          min-width: 100%; } }
+  @media (max-width: 56.25em) {
+    .about {
+      margin: 5rem 2rem; }
+      .about__card {
+        height: 30rem;
+        transform: skew(10deg); }
+        .about__card--title {
+          font-size: 1.8rem;
+          min-width: 85%; } }
 
 .feedback-card {
   background-color: #fff;

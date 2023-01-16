@@ -43,4 +43,28 @@
       }
     }
   }
+  @include respond-to(phone) {
+    margin: 5rem 2rem;
+    &__card {
+      height: 30rem;
+      transform: skew(10deg);
+      &--title {
+        font-size: 1.8rem;
+        min-width: 100%;
+        // padding: 1rem;
+      }
+    }
+  }
+  @include respond-to(tablet) {
+    margin: 5rem 2rem;
+    &__card {
+      height: 30rem;
+      transform: skew(10deg);
+      &--title {
+        font-size: 1.8rem;
+        min-width: 85%;
+        // padding: 1rem;
+      }
+    }
+  }
 }
