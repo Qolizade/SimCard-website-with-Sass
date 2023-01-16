@@ -35,4 +35,10 @@
     line-height: 2;
     font-weight: 600;
   }
+  @include respond-to(tablet){
+    clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 0% 30%);
+  }
+  @include respond-to(phone){
+    clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0 100%, 0% 25%);
+  }
 }

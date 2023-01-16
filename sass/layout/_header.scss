@@ -34,11 +34,19 @@
       left: 50%;
       transform: translate(-50%, 0);
     }
-    @include respond-to(phone) {
+    @include respond-to(tablet) {
       &--darkblob,
       &--blueblob,
       &--simcard {
         height: 220px;
+        top: 0%;
+      }
+    }
+    @include respond-to(phone) {
+      &--darkblob,
+      &--blueblob,
+      &--simcard {
+        height: 160px;
         top: 0%;
       }
     }

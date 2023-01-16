@@ -1,5 +1,4 @@
 body {
-  padding: 3rem;
   color: #777;
 }
 
@@ -7,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  @include respond-to(phone) {
+  @include respond-to(tablet) {
     display: block;
   }
 }
@@ -24,6 +23,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
+  @include respond-to(tablet) {
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 10%, 20% 0%);
+  }
+  @include respond-to(phone) {
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 5%, 20% 0%);
+    padding: 10rem 0 !important;
+  }
 }
 
 .section-form {
